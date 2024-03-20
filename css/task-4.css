@@ -1,0 +1,39 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #2e2f42;
+}
+
+label {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding: 8px 16px;
+
+    margin-bottom: 8px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4e75ff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+
+    margin-top: 8px;
+}

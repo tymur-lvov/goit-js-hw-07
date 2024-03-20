@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2e2f42;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    border-radius: 8px;
+    padding: 16px;
+    width: 392px;
+    background: #f6f6fe;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+}
+
+li:not(.item) {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    outline: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    padding: 8px 16px;
+}
+
+li:not(.item):not(:last-child) {
+    margin-bottom: 8px;
+}
