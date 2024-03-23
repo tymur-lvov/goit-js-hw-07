@@ -1,0 +1,64 @@
+#controls,
+#boxes {
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    background-color: #f6f6fe;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#boxes {
+    min-height: 160px;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+
+    margin-top: 16px;
+}
+
+input {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 8px 60px;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+}
+
+[data-create] {
+    background-color: #4e75ff;
+}
+
+[data-create]:hover,
+[data-create]:focus {
+    background-color: #6c8cff;
+}
+
+
+[data-destroy] {
+    background-color: #ff4e4e;
+}
+
+[data-destroy]:hover,
+[data-destroy]:focus {
+    background-color: #ff7070;
+}

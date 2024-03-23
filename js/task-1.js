@@ -1,15 +1,9 @@
-const allCategories = document.querySelectorAll(".item");
-console.log(`Number of categories: ${allCategories.length}`);
+const сategories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${сategories.length}`);
 
-allCategories.forEach((category) => {
-  const categoryTitles = category.querySelector("h2");
-  console.log(`Category: ${categoryTitles.textContent}`);
-  const categoryElements = category.querySelectorAll("li");
-  console.log(`Elements: ${categoryElements.length}`);
+сategories.forEach((category) => {
+  const categoryTitle = category.querySelector("h2");
+  console.log(`Category: ${categoryTitle.textContent}`);
+  const categoryItems = category.querySelectorAll("li");
+  console.log(`Elements: ${categoryItems.length}`);
 });
-
-const inlineStyleSheet = document.createElement("style");
-const documentTitle = document.querySelector("title");
-
-documentTitle.after(inlineStyleSheet);
-inlineStyleSheet.innerHTML = "body {background-color: teal} ";
