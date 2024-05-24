@@ -6,7 +6,7 @@ HTML містить список категорій ul#categories.
 
 <ul id="categories">
   <li class="item">
-    <h2>Animals</h2>
+    h2Animals</h2>
     <ul>
       <li>Cat</li>
       <li>Hamster</li>
@@ -15,7 +15,7 @@ HTML містить список категорій ul#categories.
     </ul>
   </li>
   <li class="item">
-    <h2>Products</h2>
+    h2Products</h2>
     <ul>
       <li>Bread</li>
       <li>Parsley</li>
@@ -23,7 +23,7 @@ HTML містить список категорій ul#categories.
     </ul>
   </li>
   <li class="item">
-    <h2>Technologies</h2>
+    h2Technologies</h2>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -39,7 +39,7 @@ HTML містить список категорій ul#categories.
 З використанням властивостей і методів DOM-елементів, напиши скрипт, який:
 
 Порахує й виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
-Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу <h2>) і кількість елементів у категорії (усіх <li>, вкладених у нього).
+Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу h2) і кількість елементів у категорії (усіх <li>, вкладених у нього).
 
 
 На що буде звертати увагу ментор при перевірці:
