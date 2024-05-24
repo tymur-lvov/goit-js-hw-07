@@ -4,42 +4,42 @@
 
 HTML містить список категорій ul#categories.
 
-<ul id="categories">
-  <li class="item">
-    <h2>Animals</h2>
-    <ul>
-      <li>Cat</li>
-      <li>Hamster</li>
-      <li>Horse</li>
-      <li>Parrot</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Products</h2>
-    <ul>
-      <li>Bread</li>
-      <li>Parsley</li>
-      <li>Cheese</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Technologies</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-    </ul>
-  </li>
-</ul>
+ul id="categories"
+  li class="item"
+    h2Animals/h2
+    ul
+      liCat/li
+      liHamster/li
+      liHorse/li
+      liParrot/li
+    /ul
+  /li
+  li class="item"
+    h2Products/h2
+    ul
+      liBread/li
+      liParsley/li
+      liCheese/li
+    /ul
+  /li
+  li class="item"
+    h2Technologies/h2
+    ul
+      liHTML/li
+      liCSS/li
+      liJavaScript/li
+      liReact/li
+      liNode.js/li
+    /ul
+  /li
+/ul
 
 
 
 З використанням властивостей і методів DOM-елементів, напиши скрипт, який:
 
 Порахує й виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
-Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу <h2>) і кількість елементів у категорії (усіх <li>, вкладених у нього).
+Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу h2) і кількість елементів у категорії (усіх li, вкладених у нього).
 
 
 На що буде звертати увагу ментор при перевірці:
@@ -60,11 +60,11 @@ HTML містить список категорій ul#categories.
 
 Напиши скрипт для створення галереї зображень на основі масиву даних. HTML містить список ul.gallery.
 
-<ul class="gallery"></ul>
+ul class="gallery"/ul
 
 
 
-Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+Використовуй масив об'єктів images для створення елементів img, вкладених в li.
 
 Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
 
@@ -102,8 +102,8 @@ const images = [
 На що буде звертати увагу ментор при перевірці:
 
 Створена й додана в DOM галерея із трьох зображень
-Галерея додана у список ul.gallery і являє собою 3 елементи <li>, в які вкладені елементи <img>
-Для створення елементів <img> використані дані з масиву об’єктів images
+Галерея додана у список ul.gallery і являє собою 3 елементи li, в які вкладені елементи img
+Для створення елементів img використані дані з масиву об’єктів images
 Усі елементи галереї додані в DOM за одну операцію додавання
 Є мінімальне оформлення галереї флексбоксами через CSS класи
 
@@ -116,8 +116,8 @@ const images = [
 
 
 
-<input type="text" id="name-input" placeholder="Please enter your name" />
-<h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+input type="text" id="name-input" placeholder="Please enter your name" /
+h1Hello, span id="name-output"Anonymous/span!/h1
 
 На що буде звертати увагу ментор при перевірці:
 
@@ -135,17 +135,17 @@ const images = [
 
 
 
-<form class="login-form">
-  <label>
+form class="login-form"
+  label
     Email
-    <input type="email" name="email" />
-  </label>
-  <label>
+    input type="email" name="email" /
+  /label
+  label
     Password
-    <input type="password" name="password" />
-  </label>
-  <button type="submit">Log in</button>
-</form>
+    input type="password" name="password" /
+  /label
+  button type="submit"Log in/button
+/form
 
 
 
@@ -170,14 +170,14 @@ const images = [
 
 
 
-Напиши скрипт, який змінює колір фону елемента <body> через інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим вмістом для span.color.
+Напиши скрипт, який змінює колір фону елемента body через інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим вмістом для span.color.
 
 
 
-<div class="widget">
-  <p>Background color: <span class="color">-</span></p>
-  <button type="button" class="change-color">Change color</button>
-</div>
+div class="widget"
+  pBackground color: span class="color"-/span/p
+  button type="button" class="change-color"Change color/button
+/div
 
 
 
@@ -192,15 +192,15 @@ function getRandomHexColor() {
 
 
 
-Зверни увагу, що функція getRandomHexColor() повертає колір у hex-форматі, в той час як колір фону на <body> буде у форматі rgb. Це нормально й не потребує якихось правок.
+Зверни увагу, що функція getRandomHexColor() повертає колір у hex-форматі, в той час як колір фону на body буде у форматі rgb. Це нормально й не потребує якихось правок.
 
 
 
 На що буде звертати увагу ментор при перевірці:
 
-Фон на <body> задається тільки після кліку на button.change-color
-При кожному кліку на елемент button.change-color фон <body> зафарбовується новим рандомним кольором
-На <body> і span.color значення одного й того самого кольору
+Фон на body задається тільки після кліку на button.change-color
+При кожному кліку на елемент button.change-color фон body зафарбовується новим рандомним кольором
+На body і span.color значення одного й того самого кольору
 
 
 Завдання 6
@@ -215,26 +215,26 @@ function getRandomHexColor() {
 
 
 
-<div id="controls">
-  <input type="number" min="1" max="100" step="1" />
-  <button type="button" data-create>Create</button>
-  <button type="button" data-destroy>Destroy</button>
-</div>
+div id="controls"
+  input type="number" min="1" max="100" step="1" /
+  button type="button" data-createCreate/button
+  button type="button" data-destroyDestroy/button
+/div
 
-<div id="boxes"></div>
-
-
+div id="boxes"/div
 
 
-Після натискання користувачем на кнопку Create треба провалідувати значення в input, воно має бути в межах від 1 до 100 включно. Тільки якщо воно задоволяє умову, мають додаватися нові <div> елементи в DOM.
+
+
+Після натискання користувачем на кнопку Create треба провалідувати значення в input, воно має бути в межах від 1 до 100 включно. Тільки якщо воно задоволяє умову, мають додаватися нові div елементи в DOM.
 
 Для рендеру елементів на сторінці створи функцію createBoxes(amount), яка приймає один параметр — число, що зберігає кількість елементів для рендеру.
 
 
 
-Функція має створювати стільки <div> елементів, скільки вказано в параметрі amount і додавати їх у DOM дочірніми елементами для div#boxes.
+Функція має створювати стільки div елементів, скільки вказано в параметрі amount і додавати їх у DOM дочірніми елементами для div#boxes.
 
-Розміри першого <div> елемента мають бути 30px на 30px.
+Розміри першого div елемента мають бути 30px на 30px.
 Кожен наступний елемент повинен бути ширшим і вищим від попереднього на 10px.
 Усі елементи повинні мати випадковий колір фону. Використовуй готову функцію getRandomHexColor() для отримання випадкового кольору.
 
